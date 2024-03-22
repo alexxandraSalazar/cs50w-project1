@@ -19,7 +19,9 @@ def index(request):
 def entryPage(request, title):
     HTMLconverted = convert(title)
     if HTMLconverted is None:
-        return render(request, "encyclopedia/error.html")
+        return render(request, "encyclopedia/error.html",{
+            "msg": "Entry page not found"
+        })
     
     else:
         return render(request, "encyclopedia/entryPage.html",{
@@ -42,8 +44,7 @@ def search(request):
             return render(request, "encyclopedia/search.html", {
                 "recomendacion": recomendacion
             })
-    else:
-        return render(request, "encyclopedia/error.html")
+
     
 def randomm(request):
     entries = util.list_entries()
@@ -63,10 +64,7 @@ def edit(request):
             "title": title,
             "content": content
         })
-    else:
-        return render(request, "error.html", {
-            "msg": "Only POST method is allowed for editing."
-        })
+
         
 def save(request):
     if request.method == 'POST':
