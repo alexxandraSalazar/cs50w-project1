@@ -1,7 +1,9 @@
 body {
+    
     margin: 0;
     background-color:rgb(250, 248, 249);
-}
+
+
 
 code {
     white-space: pre;
@@ -19,7 +21,7 @@ textarea {
 
 
 .main {
-    padding: 10px;
+    padding: 30px;
 }
 
 .search {
@@ -38,11 +40,31 @@ textarea {
 }
 
 .sidebar {
-    background-color: rgb(159, 43, 104);
+    background-color: rgb(161, 14, 93);
     border: 3px solid rgb(161, 14, 93);
     border-radius: 5%;
     flex: 1; 
     padding: 20px;
+}
+
+
+.respon  div  {
+    margin-bottom: 20px;
+}
+
+
+
+@media only screen and (max-width: 463px) {
+
+.row{
+    height: 10px;
+}
+.respon div{
+    flex-direction: column;
+    display: inline-block;
+    margin-right: 20px;
+    padding-left: 10px;
+}
 }
 
 a{
@@ -102,4 +124,4 @@ textarea {
     display: block;
     margin: 0 auto; 
     padding: 12px 24px; 
-}
+}}
