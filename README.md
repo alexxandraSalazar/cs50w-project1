@@ -55,5 +55,5 @@ Start the server
 
 ## Author
 
-- https://github.com/Alex000127
+- [Alexandra Salazar](https://github.com/Alex000127)
 
