@@ -1,19 +1,33 @@
+# Project 1: WIKI
 
-# Project1: WIKI
+A Wikipedia-like online encyclopedia built as part of Harvard's CS50 Web Programming with Python and JavaScript.  
+This project allows users to view, search, create, edit, and navigate encyclopedia entries written in Markdown.
 
-An encyclopedia website based on wikipedia.
+---
 
-# Developed using:
+## Features
 
-> - Django
-> - Python
-> - HTML
-> - CSS
-> - Jinja
-> - Markdown
-> - Boostrap
+- Browse all existing entries in the encyclopedia.
+- Search for entries (exact match or partial match).
+- Create new entries using a Markdown editor.
+- Edit existing entries.
+- Visit a random entry.
+- Render Markdown to HTML for display.
+- Proper error handling (e.g., duplicate pages, empty submissions).
 
+---
 
+## 🛠Built With
+
+- **Django** – Python web framework
+- **Python** – Backend logic
+- **HTML** – Page structure
+- **CSS** – Styling
+- **Jinja** – Templating engine (Django Templates)
+- **Markdown** – Content formatting
+- **Bootstrap** – Responsive design framework
+
+---
 
 ## Run Locally
 
